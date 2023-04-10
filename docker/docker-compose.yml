@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    env_file: ../src/.env
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-aircraft_manager_db}
+      POSTGRES_USER: ${DATABASE_USER:-postgres}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-aircraft_manager_db}
+    ports:
+      - 127.0.0.1:${DATABASE_PORT:-5432}:5432
+
+volumes:
+  db_data:

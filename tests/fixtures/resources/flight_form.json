@@ -1,0 +1,35 @@
+{
+  "departure_airport": {
+    "type": "choice",
+    "required": true,
+    "read_only": false,
+    "label": "Departure airport",
+    "choices": []
+  },
+  "departure_date": {
+    "type": "datetime",
+    "required": true,
+    "read_only": false,
+    "label": "Departure date"
+  },
+  "arrival_airport": {
+    "type": "choice",
+    "required": true,
+    "read_only": false,
+    "label": "Arrival airport",
+    "choices": []
+  },
+  "arrival_date": {
+    "type": "datetime",
+    "required": true,
+    "read_only": false,
+    "label": "Arrival date"
+  },
+  "aircraft": {
+    "type": "choice",
+    "required": true,
+    "read_only": false,
+    "label": "Aircraft",
+    "choices": []
+  }
+}

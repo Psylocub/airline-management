@@ -1,0 +1,12 @@
+[project]
+name = "aircraft_manager"
+authors = ["Oleksandr"]
+readme = "README.md"
+python = "~3.10"
+version = "0.0.0"
+
+[tool.pytest.ini_options]
+addopts = "-vv --reuse-db"
+testpaths = ["tests",]
+DJANGO_SETTINGS_MODULE = "aircraft_manager.settings"
+python_paths = "src"
